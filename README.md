@@ -1,11 +1,13 @@
-# Лоскутовы Финансы — Cloudflare
+# Лоскутовы Финансы — Cloudflare Worker
 
-Cloudflare Worker + D1. Этот комплект заменяет четыре файла в GitHub:
+Версия 20260922-3.
+
+Этот комплект заменяет 4 файла в репозитории:
 - worker.js
 - wrangler.jsonc
 - package.json
 - README.md
 
-В Worker встроены приложение, PWA, иконки, D1-синхронизация и Web Push. Версия пакета: 20260922-2.
+В Worker встроены интерфейс, PWA, иконки, D1-синхронизация, Web Push и Cron для напоминаний.
 
-После commit Cloudflare Git integration автоматически собирает и публикует Worker.
+После commit Cloudflare Git integration выполняет `npx wrangler deploy`.
